@@ -36,7 +36,8 @@ namespace API
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            // not using during development 
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 
