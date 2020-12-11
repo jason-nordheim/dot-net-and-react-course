@@ -3,6 +3,10 @@
 -   Known as code first development methodology
 -   Generated from a code base
 
+## DotNetCli Tool 
+
+Command: `dotnet tool install --global dotnet-ef`
+
 ## Database Context
 
 -   Class: `DBContext`
@@ -35,7 +39,7 @@
         public DbSet<Type> TableName { get; set; }
         ```
 
-    3.  Add new service as a depedency in `API.startup.cs` file under the `ConfigureServices(IServiceCollection services)` method:
+    3.  Add new service as a dependency in `API.startup.cs` file under the `ConfigureServices(IServiceCollection services)` method:
 
         1.  Add a new Service by calling the `services.AddDbContext<DbContext>` method
 
